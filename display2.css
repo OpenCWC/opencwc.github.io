@@ -32,6 +32,12 @@
 		height: 300px;
 	}
 
+	#featureContent-video {
+		height: 275px;
+		min-width: 80rem;
+		top: -65px;
+	}
+
 	#topBar {
 		height: 70px;
 	}
@@ -74,8 +80,8 @@
 	}
 
 	.section {
-		padding-top: 4rem;
-		padding-bottom: 2rem;
+		padding-top: 3rem;
+		padding-bottom: 1rem;
 	}
 
 	.characterCard {
