@@ -11,6 +11,8 @@ html {
 * {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+	font-weight: 400;
+	color: #505050;
 }
 
 body {
@@ -56,20 +58,27 @@ span {
 
 h1 {
 	margin: 0;
-	font-size: 4em;
-	font-weight: 450;
+	font-size: 64px;
 }
 
 h2 {
 	margin: 0;
-	font-size: 1.2em;
-	font-weight: 450;
+	font-size: 20px;
 }
 
 h3 {
 	margin: 0;
-	font-size: 2em;
-	font-weight: 650;
+	font-size: 32px;
+}
+
+h4 {
+	margin: 0;
+	font-size: 24px;
+}
+
+h5 {
+	margin: 0;
+	font-size: 16px;
 }
 
 ::selection {
@@ -78,8 +87,7 @@ h3 {
 
 .container,
 .container-fluid {
-	max-width: 1420px;
-	width: 100%;
+	width: 1420px;
 	padding-right: var(--bs-gutter-x, 0.75rem);
 	padding-left: var(--bs-gutter-x, 0.75rem);
 	margin-right: auto;
@@ -107,22 +115,14 @@ h3 {
 	color: #909090;
 }
 
-.txt-darkGrey {
-	color: #505050;
-}
-
 .txt-black {
 	color: #202020;
 }
 
-.bg-darkGrey {
-	background-color: #303030;
-}
 
+/* ---------- Feature ---------- */
 
-/* ---------- Elements ---------- */
-
-#featureOverlay {
+#feature {
 	height: 110px;
 	z-index: 10;
 	top: 0px;
@@ -130,20 +130,14 @@ h3 {
 	flex-direction: column;
 }
 
-.topBar {
+#featureBar {
 	height: 110px;
 	z-index: 10;
+    transition: all 0.1s ease-out;
 	display: flex;
 }
 
-.topBar-logo {
-	height: 110px;
-	z-index: 10;
-	display: flex;
-	transition: all 0.1s ease-out;
-}
-
-.topBar-link {
+.featureBar-link {
     height: 60px;
 	margin: 25px;
 	padding: 12px;
@@ -153,21 +147,17 @@ h3 {
     user-select: none;
 	opacity: 0.5;
 	margin-left: auto;
+	color: #ffffff;
     transition: all 0.1s ease-out;
 	display: flex;
 }
 
-.topBar-link-text {
-	color: #ffffff;
-	transition: all 0.1s ease-out;
-}
-
-.topBar-link:hover {
+.featureBar-link:hover {
 	opacity: 1;
 	background-color: #ffe10040;
 }
 
-.topBar-socialMedia {
+.featureBar-twitter {
     width: 60px;
     height: 60px;
 	margin: 25px;
@@ -181,13 +171,12 @@ h3 {
 	display: flex;
 }
 
-.topBar-socialMedia:hover {
+.featureBar-twitter:hover {
 	opacity: 1;
 	background-color: #ffe10040;
 }
 
-.featureOverlay-introText {
-	color: #ffffff;
+.featureText {
 	text-shadow: 0rem 0.1rem 0.4rem #000000d0;
 	z-index: 10;
 	margin-top: 150px;
@@ -221,6 +210,26 @@ h3 {
 	background-size: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .divider {
 	background-color: #c0c0c0;
 	height: 1px;
@@ -234,7 +243,9 @@ h3 {
 }
 
 .sectionHeading {
-	margin-bottom: 1.25rem;
+	margin-bottom: 12px;
+	color: #000000;
+	font-weight: 650;
 }
 
 .bodySVG {
@@ -246,46 +257,50 @@ h3 {
 	margin: 0;
 	width: 100%;
 	height: auto;
-	border-radius: 1.5rem;
+	border-radius: 1rem;
 }
 
 .characterCard {
+	padding-bottom: 8px;
 	background-color: #ffffff;
 	border-radius: 0.75rem;
 	box-shadow: 0rem 0.1rem 0.2rem #00000020;
 }
 
 .characterCard-image {
-	margin: 0;
 	width: 100%;
 	height: auto;
 	border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .characterCard-body {
-	padding-top: 0.5rem;
-	padding-bottom: 0.75rem;
-	padding-left: 0.67rem;
-	padding-right: 0.75rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.characterCard-description {
+	width: 100%;
 }
 
 .characterCard-title {
-	font-size: 1.5rem;
-	color: #000000;
 	font-weight: 500;
+	margin: 8px 8px 0 8px;
+	color: #000000;
 }
 
 .characterCard-subtitle {
+	height: 64px;
+	margin: 0 8px 8px 8px;
 	color: #707070;
-	font-weight: 400;
 }
 
-.characterCard-buttonAll {
+.characterCard-button {
+	margin-left: 8px;
+	margin-right: 8px;
 	height: 3.5rem;
 	background-color: #f0f0f0;
 	border-radius: 0.75rem;
 	text-align: center;
-	margin-top: 1rem;
 	user-select: none;
 	cursor: pointer;
 	line-height: 3.5rem;
@@ -293,13 +308,9 @@ h3 {
 	transition: 0.1s ease-out;
 }
 
-.characterCard-buttonAll:hover {
-	background-color: #cdd8e7;
+.characterCard-button:hover {
+	background-color: #e0e0e0;
 }
-
-
-
-
 
 
 
@@ -312,104 +323,57 @@ h3 {
 
 
 .extraCard {
+	padding-bottom: 8px;
+	padding: 0px;
 	background-color: #ffffff;
 	border-radius: 0.75rem;
 	box-shadow: 0rem 0.1rem 0.2rem #00000020;
 }
 
 .extraCard-image {
-	margin: 0;
-	height: 12rem;
-	border-radius: 0.75rem 0 0 0.75rem;
+	background-color: #f0f0f0;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 0.75rem 0 0 0;
 }
 
 .extraCard-body {
+	display: flex;
+	flex-direction: row;
 	width: 100%;
-	padding: 12px;
+}
+
+.extraCard-description {
+	width: 100%;
 }
 
 .extraCard-title {
-	font-size: 1.5rem;
+	margin: 8px 12px 0 12px;
 	color: #000000;
-	font-weight: 500;
 }
 
 .extraCard-subtitle {
-	height: 4.75rem;
+	height: 64px;
+	margin: 0 12px 12px 12px;
 	color: #707070;
-	font-weight: 400;
-	margin-bottom: auto;
 }
 
-.extraCard-buttonDownload {
+.extraCard-button {
+	margin: 0px;
 	height: 3.5rem;
 	background-color: #3a7dd7;
-	border-radius: 0.75rem;
-	margin-top: auto;
-	margin-bottom: 0px;
+	border-radius: 0 0 0.75rem 0.75rem;
 	text-align: center;
 	user-select: none;
 	cursor: pointer;
 	line-height: 3.5rem;
-	color: #ffffff;
+	color: #404040;
 	transition: 0.1s ease-out;
 }
 
-.extraCard-buttonDownload:hover {
+.extraCard-button:hover {
 	background-color: #3068b0;
 }
-
-
-
-
-
-
-
-
-
-
-
-.readingCard {
-	display: flex;
-	background-color: #ffffff;
-	border-radius: 0.75rem;
-	box-shadow: 0rem 0.1rem 0.5rem #00000020;
-	transition: 0.1s ease-out;
-}
-
-.readingCard:hover {
-	background-color: #f2f5ff;
-}
-
-.readingCard-body {
-	width: 100%;
-	padding: 12px;
-}
-
-.readingCard-title {
-	font-size: 1.5rem;
-	color: #000000;
-	font-weight: 500;
-}
-
-.readingCard-subtitle {
-	height: 4.75rem;
-	color: #707070;
-	font-weight: 400;
-	margin-bottom: auto;
-}
-
-.readingCard-icon {
-	margin-top: 3.5rem;
-	margin-bottom: 3.5rem;
-	height: 5rem;
-}
-
-
-
-
-
-
 
 
 
@@ -433,13 +397,16 @@ h3 {
 	flex: 0 0 auto;
 }
 
-.column2-60 {
+.column2-paragraph {
 	width: 60%;
-	padding-right: 2rem;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
-.column2-40 {
+.column2-media {
 	width: 40%;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .disabled {
@@ -463,6 +430,29 @@ h3 {
 	height: 5rem;
 }
 
+.modal-title {
+	color: #000000;
+	font-size: 32px;
+	font-weight: 650;
+	width: calc(100% - 5rem);
+	height: 5rem;
+	display: flex;
+	padding: 1rem;
+}
+
+.modal-close {
+	width: 5rem;
+	height: 5rem;
+	padding: 1.5rem;
+	transition: all 0.1s ease-out;
+	cursor: pointer;
+}
+
+.modal-close:hover {
+	border-radius: 0 1rem 0 0;
+	background-color: #d0d0d0;
+}
+
 .modal-section {
 	background-color: #f0f0f0;
 	border-radius: 0 0 1rem 1rem;
@@ -478,8 +468,8 @@ h3 {
 	height: 44px;
 	line-height: 44px;
 	font-size: 1.25rem;
-	color: #000000;
 	font-weight: 500;
+	color: #000000;
 }
 
 .modal-versionDownload {
@@ -508,139 +498,10 @@ h3 {
 	line-height: 24px;
 	font-weight: 600;
 	padding: auto;
+	transition: all 0.1s ease-out;
 }
 
 .modal-versionChangelog {
 	color: #707070;
-	font-weight: 400;
 	margin-left: 14px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#topBar {
-	height: 110px;
-	z-index: 10;
-	top: 0px;
-	display: flex;
-	flex-direction: column;
-}
-
-.doc-logo {
-	height: 110px;
-	z-index: 10;
-	display: flex;
-	transition: all 0.1s ease-out;
-}
-
-.doc-logo:hover {
-	background-color: #e3e9ff;
-}
-
-.doc-navigation {
-	width: 30rem;
-	height: 100vh;
-	overflow: scroll;
-}
-
-.doc-navigation-category {
-	font-weight: 500;
-	padding: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	font-size: 1.4rem;
-	margin-top: 24px;
-	user-select: none;
-}
-
-.doc-navigation-category-divider {
-	background-color: #a0a0a0;
-	height: 1px;
-}
-
-.doc-navigation-page {
-	padding: 8px;
-	padding-left: 20px;
-	margin-left: 12px;
-	margin-right: 12px;
-	margin-bottom: 2px;
-	font-size: 1.2rem;
-	border-radius: 0.5rem;
-	cursor: pointer;
-	user-select: none;
-	transition: all 0.1s ease-out;
-}
-
-.doc-navigation-page:hover {
-	background-color: #e3e9ff;
-}
-
-.doc-navigation-pageActive {
-	font-weight: 650;
-	color: #f00;
-	padding: 8px;
-	padding-left: 20px;
-	margin-left: 12px;
-	margin-right: 12px;
-	margin-bottom: 2px;
-	font-size: 1.2rem;
-	border-radius: 0.5rem;
-	user-select: none;
-}
-
-.doc-content {
-	width: calc(100vw - 30rem);
-	height: 100vh;
-	overflow: scroll;
-}
-
-.doc-content-section {
-	padding-top: 8rem;
-	background-color: #e0e0e0;
-}
-
-.doc-content-header1 {
-	font-size: 3rem;
-	font-weight: 500;
-	color: #202020;
-}
-
-.doc-content-header2 {
-	font-size: 2rem;
-	font-weight: 500;
-	margin-bottom: 1rem;
-	color: #202020;
-}
-
-.doc-content-image {
-	margin: 0;
-	width: 100%;
-	height: auto;
-	border-radius: 0.75rem;
 }

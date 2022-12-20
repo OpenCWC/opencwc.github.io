@@ -16,19 +16,19 @@
     </head>
     <body onload="document.body.style.opacity='1', avatar.hidden=false">
 
-		<section id="featureOverlay">
-			<div class="topBar">
+		<section id="feature">
+			<div id="featureBar">
 				<img src="images/logos/opencwc.svg"></img>
-				<a class="topBar-link" href="docs/getting-started/introduction.html">
-					<span class="topBar-link-text">Documentation</span>
+				<a class="featureBar-link" href="docs/getting-started/introduction.html">
+					<h5 style="color: #ffffff;">Documentation</h5>
 				</a>
-				<a class="topBar-socialMedia" href="https://twitter.com/OpenCWC" target="_blank" tabindex="-1">
+				<a class="featureBar-twitter" href="https://twitter.com/OpenCWC" target="_blank" tabindex="-1">
 					<img src="images/logos/twitter.svg"/>
 				</a>
 			</div>
-			<div class="featureOverlay-introText">
-				<h1>The revolution of Chris</h1>
-				<h2 style="letter-spacing: 0.25px; padding-left: 2rem; padding-right: 2rem;">While the world waits for his return, you at home can now play with Chris however you like.</h2>
+			<div class="featureText">
+				<h1 style="color: #ffffff;">The revolution of Chris</h1>
+				<h2 style="color: #ffffff; letter-spacing: 0.25px; padding-left: 2rem; padding-right: 2rem;">While the world waits for his return, you at home can now play with Chris however you like.</h2>
 			</div>
 		</section>
 
@@ -38,20 +38,21 @@
 
 		<section class="section">
 			<div class="container">
-				<h3 class="sectionHeading textColor-black">What is the OpenCWC Project?</h3>
+				<h3 class="sectionHeading">What is the OpenCWC Project?</h3>
 	            <div class="row">
-					<div class="column2-60">
-						<span>The OpenCWC Project was created by a wannabe animator with the purpose of providing the world with true and honest Chris Chan content. We believe that Chris is a valuable source of entertainment, but since his imprisonment for the rape of his mother, content has been lacking. But no longer! Now you at home can make your own Chantrums!
-						<br><br>
-						For best compatibility, we recommend using Autodesk Maya 2022.4 and Pixar RenderMan 24.4. Generic models and textures are available for use with other pipelines.
-						<br><br>
-						This project is licensed under Creative Commons BY-NC-SA 4.0, and contains nudity.
-						</span>
-						<br><br>
+					<div class="column2-paragraph">
+						<h5>
+							The OpenCWC Project was created by a wannabe animator with the purpose of providing the world with true and honest Chris Chan content. We believe that Chris is a valuable source of entertainment, but since his imprisonment for the rape of his mother, content has been lacking. But no longer! Now you at home can make your own Chantrums!
+							<br><br>
+							For best compatibility, we recommend using Autodesk Maya 2022.4 and Pixar RenderMan 24.4. Generic models and textures are available for use with other pipelines.
+							<br><br>
+							This project is licensed under Creative Commons BY-NC-SA 4.0, and contains nudity.
+						</h5>
+						<br>
 						<img class="bodySVG" src="images/icons/cc.svg"/>
 	                    <img class="bodySVG" src="images/icons/restricted.svg"/>
 					</div>
-					<div class="column2-40">
+					<div class="column2-media">
 						<video class="bodyImage" style="background-color: #867446;" width="320" height="240" autoplay muted loop tabindex="-1">
 							<source src="images/mery3.mp4" type="video/mp4">
 						</video>
@@ -62,31 +63,33 @@
 
 		<section class="section">
 			<div class="container">
-				<h3 class="sectionHeading textColor-black">Characters</h3>
+				<h3 class="sectionHeading">Characters</h3>
 	            <div class="row">
 					<div class="column4">
 						<div class="characterCard">
-							<img class="characterCard-image" src="images/characters/placeholder.png"/>
 							<div class="characterCard-body">
-								<span class="characterCard-title">Placeholder</span>
-								<br>
-								<p class="characterCard-subtitle">Version 1 (17 December 2022)</p>
-								<div class="characterCard-buttonAll" data-bs-toggle="modal" data-bs-target="#modal0">
-									<span style="color: #404040;">See all versions</span>
+								<img class="characterCard-image" src="images/characters/placeholder.png"/>
+								<div class="characterCard-description">
+									<h4 class="characterCard-title">Placeholder</h4>
+									<h5 class="characterCard-subtitle">Version 1 (17 December 2022)</h5>
 								</div>
+							</div>
+							<div class="characterCard-button" data-bs-toggle="modal" data-bs-target="#modal0">
+								<h5>See all versions</h5>
 							</div>
 						</div>
 					</div>
 					<div class="column4">
 						<div class="characterCard disabled greyscale">
-							<img class="characterCard-image" src="images/characters/chris.png"/>
 							<div class="characterCard-body">
-								<span class="characterCard-title">Chris Chandler</span>
-								<br>
-								<p class="characterCard-subtitle">Coming soon</p>
-								<div class="characterCard-buttonAll" data-bs-toggle="modal" data-bs-target="#modal1">
-									<span style="color: #404040;">See all versions</span>
+								<img class="characterCard-image" src="images/characters/chris.png"/>
+								<div class="characterCard-description">
+									<h4 class="characterCard-title">Chris Chandler</h4>
+									<h5 class="characterCard-subtitle">Coming soon</h5>
 								</div>
+							</div>
+							<div class="characterCard-button" data-bs-toggle="modal" data-bs-target="#modal1">
+								<h5>See all versions</h5>
 							</div>
 						</div>
 					</div>
@@ -96,63 +99,59 @@
 
 		<section class="section">
 			<div class="container">
-				<h3 class="sectionHeading textColor-black">Extras</h3>
+				<h3 class="sectionHeading">Extras</h3>
 	            <div class="row">
 					<div class="column2">
-						<div class="extraCard" style="display: flex;">
-							<img class="extraCard-image" src="images/aces.png"/>
+						<div class="extraCard">
 							<div class="extraCard-body">
-								<span class="extraCard-title">ACES 1.2</span>
-								<br>
-								<p class="extraCard-subtitle">After Effects plugin for colour management compatibility</p>
-								<a href="files/aces.zip" tabindex="-1" style="margin-top: auto; margin-bottom: 0px;">
-									<div class="extraCard-buttonDownload">
-										<span style="color: #ffffff;">Download</span>
-									</div>
-								</a>
+								<img class="extraCard-image" src="images/aces.png"/>
+								<div class="extraCard-description">
+									<h4 class="extraCard-title">ACES 1.2</h4>
+									<h5 class="extraCard-subtitle">After Effects plugin for colour management compatibility</h5>
+								</div>
 							</div>
+							<a href="files/aces.zip" tabindex="-1" style="margin-top: auto; margin-bottom: 0px;">
+								<div class="extraCard-button">
+									<h5 style="color: #ffffff;">Download</h5>
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="column2">
-						<div class="extraCard" style="display: flex;">
-							<img class="extraCard-image" src="images/cwc.png"/>
+						<div class="extraCard">
 							<div class="extraCard-body">
-								<span class="extraCard-title">OpenCWC Logos</span>
-								<br>
-								<p class="extraCard-subtitle">SVG and PNG versions of the OpenCWC logo</p>
-								<a href="files/opencwc-branding.zip" tabindex="-1" style="margin-top: auto; margin-bottom: 0px;">
-									<div class="extraCard-buttonDownload">
-										<span style="color: #ffffff;">Download</span>
-									</div>
-								</a>
+								<img class="extraCard-image" src="images/cwc.png"/>
+								<div class="extraCard-description">
+									<h4 class="extraCard-title">OpenCWC Logos</h4>
+									<h5 class="extraCard-subtitle">SVG and PNG versions of the OpenCWC logo</h5>
+								</div>
 							</div>
+							<a href="files/opencwc-branding.zip" tabindex="-1" style="margin-top: auto; margin-bottom: 0px;">
+								<div class="extraCard-button">
+									<h5 style="color: #ffffff;">Download</h5>
+								</div>
+							</a>
 						</div>
-			        </div>
+					</div>
 				</div>
 			</div>
 	    </section>
 
 		<section class="section">
-			<div class="container" style="text-align: center;">
-				<span style="color: #909090;">The OpenCWC Project is free to use, but I'd greatly appreciate it if you linked to this site or included mention of the OpenCWC Project in your creations.
-				<br>
-				Commercial use is not permitted, and viewer discretion is advised while browsing the project files.</span>
+			<div class="container" style="text-align: center; max-width: 70rem;">
+				<h5 style="color: #909090;">The OpenCWC Project is free to use, but I'd greatly appreciate it if you linked to this site or included mention of the OpenCWC Project in your creations. Commercial use is not permitted, and viewer discretion is advised while browsing the project files.</h5>
 	        </div>
 	    </section>
 
 		<div id="modal0" class="portfolio-modal modal fade">
 	        <div class="modal-dialog modal-xl">
 	            <div class="modal-content">
-	                <div class="modal-body text-center pb-5">
-	                    <div class="modal-container" style="width: 100%; display: flex; padding: 0; margin: 0px;">
+	                <div class="modal-body">
+	                    <div class="modal-container">
 							<div class="modal-header">
-								<div style="height: 5rem; display: flex; padding: 1rem;">
-									<h3 class="textColor-black">Placeholder</h3>
-									<!--
-										<div style="display: flex; float: right; margin-left: 100%; margin-right: 0px;">
-											<img src="images/icons/close.svg" style="height: 100%; padding: 0.33rem;">
-										</div>
-									-->
+								<h3 class="modal-title">Placeholder</h3>
+								<div class="modal-close" type="button" data-bs-dismiss="modal">
+									<img src="images/icons/close.svg">
 								</div>
 							</div>
 							<div class="modal-section">
@@ -180,16 +179,12 @@
 		<div id="modal1" class="portfolio-modal modal fade">
 	        <div class="modal-dialog modal-xl">
 	            <div class="modal-content">
-	                <div class="modal-body text-center pb-5">
-	                    <div class="modal-container" style="width: 100%; display: flex; padding: 0; margin: 0px;">
+	                <div class="modal-body">
+	                    <div class="modal-container">
 							<div class="modal-header">
-								<div style="height: 5rem; display: flex; padding: 1rem;">
-									<h3 class="textColor-black">Chris Chandler</h3>
-									<!--
-										<div style="display: flex; float: right; margin-left: 100%; margin-right: 0px;">
-											<img src="images/icons/close.svg" style="height: 100%; padding: 0.33rem;">
-										</div>
-									-->
+								<h3 class="modal-title">Chris Chandler</h3>
+								<div class="modal-close" type="button" data-bs-dismiss="modal">
+									<img src="images/icons/close.svg">
 								</div>
 							</div>
 							<div class="modal-section">

@@ -24,13 +24,10 @@
 .modal-dialog {
 	position: relative;
 	display: inline-block;
-	max-width: 1200px;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	margin-left: calc(50vw - 600px);
 	margin-right: 1rem;
-
-	max-width: 800px;
+	width: 800px;
 	margin-left: calc(50vw - 400px);
 	display: block;
 	flex-direction: column;
@@ -95,7 +92,7 @@
 }
 
 .modal-backdrop.show {
-	opacity: 0.75;
+	opacity: 0.85;
 }
 
 .modal-title {
