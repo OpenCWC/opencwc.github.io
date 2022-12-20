@@ -9,55 +9,45 @@
     }
 
 	.column-blog {
-		flex: 0 0 auto;
         width: 100%;
 	}
 
     .column1 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column1-about {
-        flex: 0 0 auto;
         width: 100%;
 		margin-left: 0%;
 		margin-right: 0%;
     }
 
 	.column2 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column2-60 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column2-40 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column2-wiki1 {
-        flex: 0 0 auto;
         width: 0px;
 		display: none;
     }
 
 	.column2-wiki2 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
     .column3 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column4 {
-	    flex: 0 0 auto;
 	    width: 100%;
 	}
 
@@ -68,14 +58,12 @@
 	}
 
 	.column5 {
-	    flex: 0 0 auto;
 	    width: 50%;
 	}
 
 	.column-sketches {
 		display: flex;
 		justify-content: center;
-	    flex: 0 0 auto;
 		margin: 4px;
 	    width: 100%;
 	}
@@ -90,7 +78,6 @@
     }
 
 	.column-blog {
-		flex: 0 0 auto;
 		margin-left: 0;
 		margin-right: 0;
 		padding-left: 0.5rem;
@@ -99,50 +86,41 @@
 	}
 
     .column1 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column1-about {
-        flex: 0 0 auto;
         width: 60%;
 		margin-left: 20%;
 		margin-right: 20%;
     }
 
     .column2 {
-        flex: 0 0 auto;
         width: 50%;
     }
 
 	.column2-60 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column2-40 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column2-wiki1 {
-        flex: 0 0 auto;
         width: 250px;
 		display: block;
     }
 
 	.column2-wiki2 {
-        flex: 0 0 auto;
         width: auto;
     }
 
     .column3 {
-        flex: 0 0 auto;
         width: 50%;
     }
 
 	.column4 {
-	    flex: 0 0 auto;
 	    width: 50%;
 	}
 
@@ -153,12 +131,10 @@
 	}
 
 	.column5 {
-	    flex: 0 0 auto;
 	    width: 33.33%;
 	}
 
 	.column-sketches {
-	    flex: 0 0 auto;
 	    width: 33%;
 	}
 }
@@ -167,60 +143,48 @@
 /* ---------- Desktop view ---------- */
 
 @media (min-width: 1420px) {
-    .container {
-        max-width: 1420px;
-    }
 
     .column1 {
-        flex: 0 0 auto;
         width: 100%;
     }
 
 	.column1-about {
-        flex: 0 0 auto;
         width: 60%;
 		margin-left: 20%;
 		margin-right: 20%;
     }
 
     .column2 {
-        flex: 0 0 auto;
         width: 50%;
     }
 
 	.column2-60 {
-        flex: 0 0 auto;
         width: 60%;
 		padding-right: 2rem;
     }
 
 	.column2-40 {
-        flex: 0 0 auto;
         width: 40%;
 		padding-right: 2rem;
     }
 
 	.column2-25 {
-        flex: 0 0 auto;
         width: 25%;
 		padding-right: 2rem;
     }
 
 	.column2-wiki1 {
-        flex: 0 0 auto;
         width: 250px;
 		display: block;
 		padding-right: 2rem;
     }
 
 	.column2-wiki2 {
-        flex: 0 0 auto;
         width: auto;
 		padding-right: 2rem;
     }
 
 	.columnCyberthugA {
-	    flex: 0 0 auto;
 	    width: 30%;
 	}
 
@@ -231,23 +195,19 @@
     }
 
 	.columnCyberthugB {
-	    flex: 0 0 auto;
 	    width: 70%;
         margin-top: 0rem;
 	}
 
     .column3 {
-        flex: 0 0 auto;
         width: 33.33%;
     }
 
 	.column4 {
-	    flex: 0 0 auto;
 	    width: 25%;
 	}
 
 	.column5 {
-	    flex: 0 0 auto;
 	    width: 20%;
 	}
 
@@ -258,7 +218,6 @@
 	}
 
 	.column-sketches {
-	    flex: 0 0 auto;
 	    width: 16.66%;
 	}
 }
@@ -319,10 +278,6 @@
 		max-width: 800px;
 		margin-left: calc(50vw - 400px);
 		display: block;
-		flex-direction: column;
-	}
-
-	.modal-container {
 		flex-direction: column;
 	}
 }

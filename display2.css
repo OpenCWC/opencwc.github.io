@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+
+/* ---------- Mobile view ---------- */
+
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 0.9em;
+	}
+
+	.sectionHeading {
+		font-size: 1.75rem;
+	}
+
+	#featureOverlay {
+		height: 50px;
+		z-index: 10;
+		top: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.featureOverlay-introText {
+		margin-top: 80px;
+	}
+
+	#featureContent {
+		height: 300px;
+	}
+
+	#topBar {
+		height: 70px;
+	}
+
+	.topBar {
+		height: 70px;
+	}
+
+	.topBar-link {
+	    height: 60px;
+		margin: 5px;
+		margin-left: auto;
+	}
+
+	.topBar-socialMedia {
+	    height: 60px;
+		margin: 5px;
+		margin-left: 0px;
+	}
+
+	.column2 {
+		width: 100%;
+	}
+
+	.column3 {
+		width: 100%;
+	}
+
+	.column4 {
+		width: 100%;
+	}
+
+	.column2-60 {
+		width: 100%;
+		padding-right: 0rem;
+	}
+
+	.column2-40 {
+		width: 0%;
+	}
+
+	.section {
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+	}
+
+	.characterCard {
+		display: flex;
+		background-color: #ffffff;
+		border-radius: 0.75rem;
+		box-shadow: 0rem 0.1rem 0.2rem #00000020;
+	}
+
+	.characterCard-image {
+		margin: 0;
+		width: 12rem;
+		height: 12rem;
+		border-radius: 0.75rem 0 0 0.75rem;
+	}
+
+	.characterCard-body {
+		width: 100%;
+		padding: 12px;
+	}
+
+	.characterCard-title {
+		font-size: 1.5rem;
+		color: #000000;
+		font-weight: 500;
+	}
+
+	.characterCard-subtitle {
+		color: #707070;
+		font-weight: 400;
+		height: 4.75rem;
+		margin-bottom: auto;
+	}
+
+	.characterCard-buttonAll {
+		height: 3.5rem;
+		background-color: #f0f0f0;
+		border-radius: 0.75rem;
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: 0px;
+		user-select: none;
+		cursor: pointer;
+		line-height: 3.5rem;
+		color: #404040;
+		transition: 0.1s ease-out;
+	}
+
+	.characterCard-buttonAll:hover {
+		background-color: #cdd8e7;
+	}
+}
+
+
+
+
+
+
+.extraCard {
+	background-color: #ffffff;
+	border-radius: 0.75rem;
+	box-shadow: 0rem 0.1rem 0.2rem #00000020;
+}
+
+.extraCard-image {
+	margin: 0;
+	height: 12rem;
+	border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.extraCard-body {
+	width: 100%;
+	padding: 12px;
+}
+
+.extraCard-title {
+	font-size: 1.5rem;
+	color: #000000;
+	font-weight: 500;
+}
+
+.extraCard-subtitle {
+	height: 4.75rem;
+	color: #707070;
+	font-weight: 400;
+	margin-bottom: auto;
+}
+
+.extraCard-buttonDownload {
+	height: 3.5rem;
+	background-color: #3a7dd7;
+	border-radius: 0.75rem;
+	margin-top: auto;
+	margin-bottom: 0px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	line-height: 3.5rem;
+	color: #ffffff;
+	transition: 0.1s ease-out;
+}
+
+.extraCard-buttonDownload:hover {
+	background-color: #3068b0;
+}
