@@ -3,317 +3,175 @@
 
 /* ---------- Mobile view ---------- */
 
-@media (max-width: 699.99px) {
-    .container {
-        max-width: 500px;
-    }
-
-	.column-blog {
-        width: 100%;
+@media (max-width: 650px) {
+	.modal-versionDownload {
+		padding: 10px;
 	}
 
-    .column1 {
-        width: 100%;
-    }
+	.modal-versionDownload-text {
+		display: none;
+	}
 
-	.column1-about {
-        width: 100%;
-		margin-left: 0%;
-		margin-right: 0%;
-    }
+	.modal-header {
+		height: 3.5rem;
+	}
+
+	.modal-title {
+		font-size: 24px;
+		height: 3.5rem;
+		line-height: 3.5rem;
+		padding: 0;
+		padding-left: 1rem;
+		width: calc(100% - 3.5rem);
+	}
+
+	.modal-close {
+		width: 3.5rem;
+		height: 3.5rem;
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 38px;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+
+	.modal-dialog {
+		width: 100%;
+		margin: 0px;
+		padding: 16px;
+	}
+
+	#feature {
+		height: 50px;
+		z-index: 10;
+		top: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#featureBar {
+		height: 80px;
+	}
+
+	.featureBar-link {
+		display: none;
+	    height: 60px;
+		margin: 5px;
+		margin-left: auto;
+	}
+
+	.featureBar-twitter {
+	    height: 60px;
+		margin: 10px;
+		margin-left: auto;
+	}
+
+	.featureText {
+		margin-top: 70px;
+	}
+
+	#featureContent {
+		height: 300px;
+	}
+
+	#featureContent-video {
+		height: 275px;
+		min-width: 80rem;
+		top: -65px;
+	}
+
+	.characterCard {
+		padding: 0px;
+	}
+
+	.characterCard-image {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 0.75rem 0 0 0;
+	}
+
+	.characterCard-body {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.characterCard-title {
+		margin: 8px 12px 0 12px;
+	}
+
+	.characterCard-subtitle {
+		margin: 0 12px 12px 12px;
+	}
+
+	.characterCard-button {
+		margin: 0px;
+		border-radius: 0 0 0.75rem 0.75rem;
+	}
+
+	.container,
+	.container-fluid {
+		width: 100%;
+	}
 
 	.column2 {
-        width: 100%;
-    }
-
-	.column2-60 {
-        width: 100%;
-    }
-
-	.column2-40 {
-        width: 100%;
-    }
-
-	.column2-wiki1 {
-        width: 0px;
-		display: none;
-    }
-
-	.column2-wiki2 {
-        width: 100%;
-    }
-
-    .column3 {
-        width: 100%;
-    }
-
-	.column4 {
-	    width: 100%;
-	}
-
-	.column4-block {
-		width: 8rem;
-		height: 8rem;
-        border-radius: 1rem;
-	}
-
-	.column5 {
-	    width: 50%;
-	}
-
-	.column-sketches {
-		display: flex;
-		justify-content: center;
-		margin: 4px;
-	    width: 100%;
-	}
-}
-
-
-/* ---------- Tablet view ---------- */
-
-@media (min-width: 700px) {
-    .container {
-        max-width: 700px;
-    }
-
-	.column-blog {
-		margin-left: 0;
-		margin-right: 0;
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-        width: 50%;
-	}
-
-    .column1 {
-        width: 100%;
-    }
-
-	.column1-about {
-        width: 60%;
-		margin-left: 20%;
-		margin-right: 20%;
-    }
-
-    .column2 {
-        width: 50%;
-    }
-
-	.column2-60 {
-        width: 100%;
-    }
-
-	.column2-40 {
-        width: 100%;
-    }
-
-	.column2-wiki1 {
-        width: 250px;
-		display: block;
-    }
-
-	.column2-wiki2 {
-        width: auto;
-    }
-
-    .column3 {
-        width: 50%;
-    }
-
-	.column4 {
-	    width: 50%;
-	}
-
-	.column4-block {
-		width: 11rem;
-		height: 11rem;
-        border-radius: 1rem;
-	}
-
-	.column5 {
-	    width: 33.33%;
-	}
-
-	.column-sketches {
-	    width: 33%;
-	}
-}
-
-
-/* ---------- Desktop view ---------- */
-
-@media (min-width: 1420px) {
-
-    .column1 {
-        width: 100%;
-    }
-
-	.column1-about {
-        width: 60%;
-		margin-left: 20%;
-		margin-right: 20%;
-    }
-
-    .column2 {
-        width: 50%;
-    }
-
-	.column2-60 {
-        width: 60%;
-		padding-right: 2rem;
-    }
-
-	.column2-40 {
-        width: 40%;
-		padding-right: 2rem;
-    }
-
-	.column2-25 {
-        width: 25%;
-		padding-right: 2rem;
-    }
-
-	.column2-wiki1 {
-        width: 250px;
-		display: block;
-		padding-right: 2rem;
-    }
-
-	.column2-wiki2 {
-        width: auto;
-		padding-right: 2rem;
-    }
-
-	.columnCyberthugA {
-	    width: 30%;
-	}
-
-    .columnCyberthugA-image {
-        width: 24rem;
-        height: 24rem;
-        border-radius: 1.5rem;
-    }
-
-	.columnCyberthugB {
-	    width: 70%;
-        margin-top: 0rem;
-	}
-
-    .column3 {
-        width: 33.33%;
-    }
-
-	.column4 {
-	    width: 25%;
-	}
-
-	.column5 {
-	    width: 20%;
-	}
-
-	.column4-block {
-		width: 13rem;
-		height: 13rem;
-        border-radius: 1rem;
-	}
-
-	.column-sketches {
-	    width: 16.66%;
-	}
-}
-
-
-/* ---------- Mobile navigation bar ---------- */
-@media (max-width: 1189.99px) {
-	.navbarLinksDivider {
-		display: none;
-	}
-
-	.navbarLinks-other {
-		display: none;
-		width: 48px !important;
-	}
-
-	.navbarLinks-active {
-		display: none;
-		width: 48px !important;
-	}
-
-	.navbarLinks-text {
-		display: none;
-		opacity: 0%;
-	}
-
-	.socialMediaNavbar {
-		display: none;
-	}
-}
-
-/* ---------- Desktop navigation bar ---------- */
-@media (min-width: 1190px) {
-	.navbarLinks {
-		display: inherit !important;
-	}
-
-	.navbarLinksDivider {
-		display: inherit;
-	}
-
-	.socialMediaNavbar {
-		display: inherit;
-	}
-}
-
-/* ---------- Narrow modal ---------- */
-@media (min-width: 840px) {
-	.newmodal-section1 {
-		border-radius: 1.5rem 1.5rem 0 0;
-	}
-
-	.newmodal-section2 {
-		border-radius: 0 0 1.5rem 1.5rem;
-	}
-
-	.modal-dialog {
-		max-width: 800px;
-		margin-left: calc(50vw - 400px);
-		display: block;
-		flex-direction: column;
-	}
-}
-
-/* ---------- Really narrow modal ---------- */
-@media (max-width: 839.99px) {
-	.newmodal-section1 {
-		width: inherit;
-	}
-
-	.newmodal-section2 {
-		width: inherit;
-	}
-
-	.newmodal-images {
-		background-color: #00000000;
-	}
-
-	.newmodal-images-feature {
-		border-radius: 1rem;
-	}
-
-	.newmodal-images-gallery {
-		display: none;
-	}
-
-	.modal-dialog {
-		width: calc(100vw - 20px);
-		margin-left: 0;
-		padding: 8px !important;
-		margin: 10px !important;
-		display: block;
-		flex-direction: column;
-	}
-
-	.modal {
 		width: 100%;
+	}
+
+	.column3 {
+		width: 100%;
+	}
+
+	.column4 {
+		width: 100%;
+	}
+
+	.column2-paragraph {
+		width: 100%;
+	}
+
+	.column2-media {
+		width: 0%;
+	}
+
+	.section {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
+}
+
+@media (min-width: 1000.01px) and (max-width: 1420px) {
+	.container,
+	.container-fluid {
+		width: 1000px;
+	}
+
+	.column2 {
+		width: 50%;
+	}
+
+	.column3 {
+		width: 100%;
+	}
+
+	.column4 {
+		width: 33.33%;
+	}
+
+	.column2-paragraph {
+		width: 50%;
+	}
+
+	.column2-media {
+		width: 50%;
 	}
 }
