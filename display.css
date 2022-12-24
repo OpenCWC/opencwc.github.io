@@ -3,6 +3,12 @@
 
 /* ---------- Mobile view ---------- */
 
+@media (max-width: 1025px) {
+	.modal-dialog {
+		transition: all 0.25s ease-out;
+	}
+}
+
 @media (max-width: 650px) {
 	.modal-versionDownload {
 		padding: 10px;
@@ -10,25 +16,6 @@
 
 	.modal-versionDownload-text {
 		display: none;
-	}
-
-	.modal-header {
-		height: 3.5rem;
-	}
-
-	.modal-title {
-		font-size: 24px;
-		height: 3.5rem;
-		line-height: 3.5rem;
-		padding: 0;
-		padding-left: 1rem;
-		width: calc(100% - 3.5rem);
-	}
-
-	.modal-close {
-		width: 3.5rem;
-		height: 3.5rem;
-		padding: 1rem;
 	}
 }
 
@@ -49,6 +36,10 @@
 		width: 100%;
 		margin: 0px;
 		padding: 16px;
+	}
+
+	.modal-content {
+		min-height: calc(100vh - 2rem);
 	}
 
 	#feature {
@@ -85,9 +76,9 @@
 	}
 
 	#featureContent-video {
-		height: 275px;
+		height: 325px;
 		min-width: 80rem;
-		top: -65px;
+		top: 25px;
 	}
 
 	.characterCard {

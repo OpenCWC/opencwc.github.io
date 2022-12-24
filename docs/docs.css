@@ -2,6 +2,7 @@
 
 .doc-logo {
 	height: 110px;
+	margin-bottom: 12px;
 	z-index: 10;
 	display: flex;
 	transition: all 0.1s ease-out;
@@ -58,25 +59,31 @@
 	font-size: 1.2rem;
 	border-radius: 0.5rem;
 	user-select: none;
+	background-color: #f0f0f0;
 }
 
 .doc-content {
 	width: calc(100vw - 30rem);
 	height: 100vh;
 	overflow: scroll;
+	background-color: #e0e0e0;
+	padding-bottom: 16rem;
 }
 
 .doc-content-section {
 	padding-top: 8rem;
-	background-color: #e0e0e0;
 }
 
-.doc-content-header1 {
+.doc-content-title {
 	font-size: 3rem;
 	color: #202020;
 }
 
-.doc-content-header2 {
+.doc-content-subtitle {
+	color: #707070;
+}
+
+.doc-content-header {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 	color: #202020;

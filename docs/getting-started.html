@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OpenCWC Documentation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="docs.css">
+        <link rel="stylesheet" href="../modal.css">
+        <link rel="stylesheet" href="../display.css">
+        <script src="../scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;450;500;600;650;700&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="../favicon.png">
+    </head>
+    <body onload="document.body.style.opacity='1', avatar.hidden=false" style="display: flex; background-color: #ffffff;">
+
+		<div class="doc-navigation">
+
+			<section id="topBar">
+				<a href="../index.html">
+					<div class="doc-logo">
+						<img src="../images/logos/documentation.svg" class="topBar-logo"></img>
+					</div>
+				</a>
+			</section>
+
+			<div>
+				<div class="doc-navigation-pageActive">
+					<span style="color: #202020;">Getting Started</span>
+				</div>
+				<div class="doc-navigation-page">
+					<span style="color: #202020;">Inside the Maya Environment</span>
+				</div>
+				<div class="doc-navigation-page">
+					<span style="color: #202020;">Initiating the Render</span>
+				</div>
+				<div class="doc-navigation-page">
+					<span style="color: #202020;">Managing Sequences in After Effects</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div style="background-image: linear-gradient(to right, #d0d0d0 , #e0e0e0); width: 8px;"></div>
+
+		<div class="doc-content">
+
+			<section class="doc-content-section">
+				<div class="container">
+					<p class="doc-content-title">Getting Started</p>
+					<p class="doc-content-subtitle">This page will get you setup with the project files and workflow</p>
+					<div style="background-color: #a0a0a0; height: 1px; margin-top: 0.5rem; margin-bottom: 2rem;"></div>
+					<p class="doc-content-header">Downloading the project files</p>
+		            <div class="row">
+						<div class="column2-paragraph">
+							<span>
+								Every character and environment provided on the OpenCWC website is available in two variations, and the best choice will depend on the software you plan to use. For those that use Autodesk Maya, choose the Maya option. This contains a tidy Maya project directory with scenes, source images and other assets. For everyone else, use the generic option. This contains the geometry and textures exported from Maya and exists for accessibility reasons.
+								<br><br>
+								This documentation shows the approriate workflow with Autodesk Maya, RenderMan and After Effects.
+								<br><br>
+								Every now and then updates will be released for individual projects, which will be accompanied with a list of modifications and additions.
+							</span>
+						</div>
+		            </div>
+		        </div>
+		    </section>
+
+			<section class="doc-content-section">
+				<div class="container">
+					<h3 class="doc-content-header">Downloading Autodesk Maya 2022.4</h3>
+		            <div class="row">
+						<div class="column2-paragraph">
+							<span>
+								Oftentimes, projects made in Autodesk Maya will be done entirely in a specific version, as updating the software has the potential to break things. The OpenCWC Project was made with Maya 2022.4, so you'll need this version to use the project.
+							</span>
+						</div>
+		            </div>
+		        </div>
+		    </section>
+
+			<section class="doc-content-section">
+				<div class="container">
+					<h3 class="doc-content-header">Installing the OpenColorIO plugin for After Effects</h3>
+		            <div class="row">
+						<div class="column2-paragraph">
+							<span>
+								The OpenColorIO plugin for After Effects provides a way to manage ACEScg renders in an identical way to RenderMan's preview interface.
+								<br><br>
+								Download the OpenColorIO plugin from the homepage and extract the archive. Move the <b>ACES-1.2</b>, <b>basic</b> and <b>filmic-blender</b> folders to <b>C:\ProgramData\OpenColorIO</b> (create this folder if it doesn't already exist). Move the plugin file to the After Effects plugin folder. A quick Google search will tell you where this is.
+							</span>
+						</div>
+						<div class="column2-media">
+							<img class="doc-content-image" src="images/opencolorio.png"/>
+						</div>
+		            </div>
+		        </div>
+		    </section>
+
+		</div>
+
+	    <!-- Bootstrap core JS-->
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
