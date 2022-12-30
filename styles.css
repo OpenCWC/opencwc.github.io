@@ -5,6 +5,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow: hidden;
 	overflow-x: hidden;
 }
 
@@ -202,7 +203,7 @@ h5 {
 
 #featureContent {
 	width: 100vw;
-	height: 550px;
+	height: 100vh;
 	z-index: -1;
 	position: sticky;
 	top: 110px;
@@ -212,9 +213,9 @@ h5 {
 
 #featureContent-video {
 	width: 100vw;
-	min-width: 150rem;
+	min-width: 250rem;
 	align-self: center;
-	height: 650px;
+	height: 100vh;
 	position: fixed;
 	overflow: hidden;
 	filter: blur(16px);
@@ -246,7 +247,7 @@ h5 {
 
 
 .divider {
-	background-color: #c8c8c8;
+	background-color: #d0d0d0;
 	height: 1px;
 	margin-top: 32px;
 	margin-bottom: 16px;
@@ -286,6 +287,7 @@ h5 {
 .characterCard-image {
 	width: 100%;
 	height: auto;
+	background-image: linear-gradient(to bottom, #8f8376 , #736557);
 	border-radius: 0.75rem 0.75rem 0 0;
 }
 
@@ -439,7 +441,7 @@ h5 {
 /* ---------- Modal ---------- */
 
 .modal-header {
-	background-color: #e0e0e0;
+	background-color: #f0f0f0;
 	border-radius: 1rem 1rem 0 0;
 	display: flex;
 	width: 100%;
@@ -449,7 +451,7 @@ h5 {
 .modal-title {
 	color: #000000;
 	font-size: 32px;
-	font-weight: 650;
+	font-weight: 600;
 	width: calc(100% - 3rem);
 	height: 4rem;
 	line-height: 4rem;
@@ -472,7 +474,6 @@ h5 {
 }
 
 .modal-section {
-	background-color: #f0f0f0;
 	border-radius: 0 0 1rem 1rem;
 	padding: 1rem;
 	width: 100%;
